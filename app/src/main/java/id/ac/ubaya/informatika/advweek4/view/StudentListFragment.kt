@@ -30,27 +30,27 @@ class StudentListFragment : Fragment() {
         //Students LiveData (observable) attached to this fragment (observer)
         //Everytime observer changes state -> observable emit the data
         //Used to "observe" Students data
-        viewModel.studentsLD.observe(viewLifecycleOwner, Observer {
+        viewModel.studentsLD.observe(viewLifecycleOwner) {
             studentListAdapter.updateStudentList(it)
-        })
+        }
 
-        viewModel.studentLoadErrorLD.observe(viewLifecycleOwner, Observer {
-            if(it == true) {
+        viewModel.studentLoadErrorLD.observe(viewLifecycleOwner) {
+            if (it == true) {
                 txtError.visibility = View.VISIBLE
             } else {
                 txtError.visibility = View.GONE
             }
-        })
+        }
 
-        viewModel.loadingLD.observe(viewLifecycleOwner, Observer {
-            if(it == true) {
+        viewModel.loadingLD.observe(viewLifecycleOwner) {
+            if (it == true) {
                 recView.visibility = View.GONE
                 progressLoad.visibility = View.VISIBLE
             } else {
                 recView.visibility = View.VISIBLE
                 progressLoad.visibility = View.GONE
             }
-        })
+        }
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {

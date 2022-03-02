@@ -32,9 +32,7 @@ class StudentListAdapter(val studentList:ArrayList<Student>):RecyclerView.Adapte
         }
     }
 
-    override fun getItemCount(): Int {
-        TODO("Not yet implemented")
-    }
+    override fun getItemCount() = studentList.size
 
     fun updateStudentList(newStudentList: List<Student>) {
         studentList.clear()
