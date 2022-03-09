@@ -62,5 +62,16 @@ class StudentListFragment : Fragment() {
         recView.adapter = studentListAdapter
 
         observeViewModel()
+
+        //Triggered when user do vertical swipe on the layout
+        refreshLayout.setOnRefreshListener {
+            recView.visibility = View.GONE
+            txtError.visibility = View.GONE
+            progressLoad.visibility = View.VISIBLE
+            //Loads up the viewmodel to retrieve latest data from endpoint API
+            viewModel.refresh()
+            //Hide the loading progress icon
+            refreshLayout.isRefreshing = false
+        }
     }
 }
