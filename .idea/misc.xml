@@ -3,6 +3,10 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/GitHub/AdvWeek4/app/src/main/res/drawable/ic_baseline_all_inclusive_24.xml" value="0.1" />
+        <entry key="..\:/GitHub/AdvWeek4/app/src/main/res/layout/fragment_student_detail.xml" value="0.2157676348547718" />
+        <entry key="..\:/GitHub/AdvWeek4/app/src/main/res/layout/fragment_student_list.xml" value="0.1625" />
+        <entry key="..\:/GitHub/AdvWeek4/app/src/main/res/layout/student_list_item.xml" value="0.1" />
         <entry key="..\:/programming/kotlin/AdvWeek4/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1" />
         <entry key="..\:/programming/kotlin/AdvWeek4/app/src/main/res/layout/activity_main.xml" value="0.24375" />
         <entry key="..\:/programming/kotlin/AdvWeek4/app/src/main/res/layout/fragment_student_detail.xml" value="0.4" />
